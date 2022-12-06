@@ -1,0 +1,25 @@
+{
+  "author": "Nolly#0001",
+  "bugs": {
+    "url": "https://github.com/TheNolle/NoCpuMonitor/issues"
+  },
+  "dependencies": {
+    "dotenv-defaults": "^5.0.2"
+  },
+  "description": "",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  },
+  "homepage": "https://github.com/TheNolle/NoCpuMonitor#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "nocpumonitor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNolle/NoCpuMonitor.git"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "version": "1.0.0"
+}
