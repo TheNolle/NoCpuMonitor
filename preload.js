@@ -10,6 +10,7 @@ contextBridge.exposeInMainWorld('versions', {
 // Informations
 contextBridge.exposeInMainWorld('informations', {
     os: _ => { return process.platform },
+    cpus: _ => { return require('os').cpus() },
     // App
     appName: _ => ipcRenderer.invoke('informations:app:name'),
     appDescription: _ => ipcRenderer.invoke('informations:app:description')

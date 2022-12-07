@@ -37,8 +37,18 @@
         </div>
         <span pageName></span>
     </nav>
+    <main>
+        <select timings title="Change the timings">
+            <option value="milliseconds">Milliseconds</option>
+            <option value="seconds">Seconds</option>
+            <option value="minutes">Minutes</option>
+        </select>
+        <button reload title="Reload the data"><i class="fa-solid fa-arrows-repeat"></i></button>
+        <canvas></canvas>
+    </main>
 </body>
 
+<script src="assets/js/libs/chart.min.js"></script>
 <script src="assets/js/index.js" type="module"></script>
 
 </html>

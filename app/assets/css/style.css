@@ -13,7 +13,41 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    position: relative;
     color: var(--color);
     font-family: var(--font);
     background-color: var(--background);
+}
+
+body> main {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    margin: auto auto;
+    align-items: start;
+    justify-items: center;
+}
+
+body> main> button[reload] {
+    width: 2rem;
+    right: .5rem;
+}
+
+body> main> :is(button[reload], select[timings]) {
+    height: 2rem;
+    border: none;
+    outline: none;
+    position: absolute;
+    border-radius: .5rem;
+    color: var(--background);
+    background-color: var(--color);
+    top: calc(var(--titlebar-height) + .5rem);
+}
+body> main> :is(button[reload], select[timings]):hover {
+    cursor: pointer;
+    filter: brightness(.75);
+}
+
+body> main> select[timings] {
+    right: 2.75rem;
 }
